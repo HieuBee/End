@@ -19,40 +19,138 @@
                         <div class="title" style="background: #ff5c1b">
                             <h3 style="margin: 10px; text-align: center; color: white">SỞ THÍCH CỦA BẠN</h3>
                         </div>
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td style="text-align: right">
-                                    <span style="padding-right: 10px; color: #4570b1;">Họ và tên</span>
-                                </td>
+                        <div class="table-1" style="padding-left: 20px">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="text-align: right">
+                                        <span style="padding-right: 10px; color: #4570b1;">Họ và tên</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="Name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right">
+                                        <span style="padding-right: 10px;color: #4570B1">Email</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="Name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right; vertical-align: top;">
+                                        <span style="padding-right: 10px; color: #4570B1">Sở thích</span>
+                                    </td>
+                                    <td style="color: #ff5c1b">
+                                        <input type="checkbox" name="tt"> Thể thao
+                                        <input type="checkbox" name="tt"> Âm nhạc
+                                        <input type="checkbox" name="tt"> Đọc sách <br>
+                                        <input type="checkbox" name="tt"> Lướt web
+                                        <input type="checkbox" name="tt"> Chơi game <br>
+                                        <input type="checkbox" name="tt"> Điện ảnh
+                                        <input type="checkbox" name="tt"> Du lịch
+                                    </td>
+                                </tr>
+                                <th>
                                 <td>
-                                    <input type="text" name="Name">
+                                    <input type="submit" name="submit" value="Gửi thông tin">
+                                    <input type="reset" name="reset" value="Nhập lại">
                                 </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: right">
-                                    <span style="padding-right: 10px;color: #4570B1">Email</span>
-                                </td>
-                                <td>
-                                    <input type="text" name="Name">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: right; vertical-align: top;">
-                                    <span style="padding-right: 10px; color: #4570B1">Sở thích</span>
-                                </td>
-                                <td>
-                                    <input type="checkbox" name="tt"> Thể thao
-                                    <input type="checkbox" name="tt"> Âm nhạc
-                                    <input type="checkbox" name="tt"> Đọc sách <br>
-                                    <input type="checkbox" name="tt"> Lướt web
-                                    <input type="checkbox" name="tt"> Chơi game <br>
-                                    <input type="checkbox" name="tt"> Điện ảnh
-                                    <input type="checkbox" name="tt"> Du lịch
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                </th>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="padding-top: 50px;">
+    <div class="form-dang-ky-hoc-vien">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="" class="dang-ky" method="get" style="border: 10px #fdf59b solid;background: #fdf59b" >
+                    <div class="content" style="">
+                        <div class="title" style="background: aquamarine">
+                            <h3 style="text-align: left; color: #4570b1">Đăng ký học viên</h3>
+                        </div>
+                        <div class="table-1" style="">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="">
+                                        <span style="color: #4570b1;">Họ và tên</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="name" size="25px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="">
+                                        <span style="color: #4570B1">Ngày sinh</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="date" size="15px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="/*vertical-align: top;*/">
+                                        <span style="color: #4570B1">Giới tính</span>
+                                    </td>
+                                    <td style="">
+                                        <input type="radio" name="gioi-tinh" checked> Nam
+                                        <input type="radio" name="gioi-tinh"> Nữ
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <span style="color: #4570B1">Địa chỉ</span>
+                                    </td>
+                                    <td>
+                                        <textarea class="description" rows="3" cols="25"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 80px">
+                                        <span style="color: #4570B1">Lớp</span>
+                                    </td>
+                                    <td>
+                                        <select name="class">
+                                            <option name="lop">- Chọn lớp -</option>
+                                            <option name="lop">- A1022I1 -</option>
+                                            <option name="lop">- A1122I1 -</option>
+                                            <option name="lop">- A1222I1 -</option>
+                                            <option name="lop">- A0123I1 -</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="">
+                                        <span style="color: #4570B1">Email</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="">
+                                        <span style="color: #4570B1">Điện thoại</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="phonenumber">
+                                    </td>
+                                </tr>
+                                <th>
+                                    <td>
+                                        <input type="submit" name="submit" value="Đăng ký">
+                                        <input type="reset" name="reset" value="Nhập lại">
+                                    </td>
+                                </th>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </form>
             </div>
