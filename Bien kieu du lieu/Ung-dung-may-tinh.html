@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <input type="number" id="inp1">
+        <input type="number" id="inp2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="addition()">Addition(+)</button>
+        <button onclick="subtraction()">Subtraction(-)</button>
+        <button onclick="multiplication()">Multiplication(x)</button>
+        <button onclick="division()">Division(/)</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Result: </span>
+        <span id="outp"></span>
+      </td>
+    </tr>
+  </table>
+</body>
+<script>
+    /*var input1 = +document.getElementById("inp1").value;
+    var input2 = +document.getElementById("inp2").value;*/
+    function addition() {
+      var input1 = +document.getElementById("inp1").value;
+      var input2 = +document.getElementById("inp2").value;
+      var resultAdd = input1 + input2;
+      document.getElementById("outp").innerHTML = resultAdd;
+    }function subtraction() {
+      var input1 = +document.getElementById("inp1").value;
+      var input2 = +document.getElementById("inp2").value;
+      var resultSub = input1 - input2;
+      document.getElementById("outp").innerHTML = resultSub;
+    }function multiplication() {
+      var input1 = +document.getElementById("inp1").value;
+      var input2 = +document.getElementById("inp2").value;
+      var resultMul = input1 * input2;
+      document.getElementById("outp").innerHTML = resultMul;
+    }function division() {
+      var input1 = +document.getElementById("inp1").value;
+      var input2 = +document.getElementById("inp2").value;
+      var resultDiv = input1 / input2;
+      document.getElementById("outp").innerHTML = resultDiv;
+    }
+</script>
+</html>

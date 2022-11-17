@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table style="text-align: center">
+    <tr>
+        <td>
+            <h4>Amount</h4>
+        </td>
+        <td style="padding-left: 20px">
+            <h4>From Currency</h4>
+        </td>
+        <td style="padding-left: 20px">
+            <h4>To Currency</h4>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="inp">
+        </td>
+        <td style="padding-left: 20px">
+            <select id="selected1" style="width: 120px">
+                <option name="vn1" value="vn1">VietNam</option>
+                <option name="usd1" value="usd1">USD</option>
+            </select>
+        </td>
+        <td style="padding-left: 20px">
+            <select id="selected2" style="width: 120px">
+                <option name="usd2" value="usd2">USD</option>
+                <option name="vn2" value="vn2">VietNam</option>
+            </select>
+        </td>
+        <td style="padding-left: 20px">
+            <button onclick="btninp()">Convert</button>
+        </td>
+    </tr>
+</table>
+<span>Result: </span>
+<span id="otp"></span>
+</body>
+<script>
+    let selected1 = document.getElementById("selected1").value;
+    let selected2 = document.getElementById("selected2").value;
+    /*let btn = document.getElementById("btn");
+    btn.addEventListener("click", btninp);*/
+    function btninp(){
+        let result = +document.getElementById("inp").value;
+        /*if (selected1 == selected2) {
+            document.getElementById("otp").innerHTML = result;
+        }*/
+        if (selected1 == "vn1" && selected2 == "usd2") {
+            result1 = result / 23000000;
+            document.getElementById("otp").innerHTML = result1;
+        }else
+        if (selected1 == "usd1" && selected2 == "vn2") {
+            result2 = result * 23000000;
+            document.getElementById("otp").innerHTML = result2;
+        }
+
+
+
+        /*document.getElementById("money").value = result;*/
+    }
+
+</script>
+</html>
