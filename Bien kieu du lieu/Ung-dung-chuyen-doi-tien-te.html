@@ -35,7 +35,7 @@
             </select>
         </td>
         <td style="padding-left: 20px">
-            <button onclick="btninp()">Convert</button>
+            <input type="button" value="Convert" onclick="btninp()">
         </td>
     </tr>
 </table>
@@ -43,28 +43,17 @@
 <span id="otp"></span>
 </body>
 <script>
-    let selected1 = document.getElementById("selected1").value;
-    let selected2 = document.getElementById("selected2").value;
-    /*let btn = document.getElementById("btn");
-    btn.addEventListener("click", btninp);*/
     function btninp(){
-        let result = +document.getElementById("inp").value;
-        /*if (selected1 == selected2) {
-            document.getElementById("otp").innerHTML = result;
-        }*/
-        if (selected1 == "vn1" && selected2 == "usd2") {
-            result1 = result / 23000000;
+        let value1 = document.getElementById("selected1").value;
+        let value2 = document.getElementById("selected2").value;
+        let inputValue = document.getElementById("inp").value;
+        if (value1 == "vn1" && value2 == "usd2") {
+            let result1 = inputValue / 23000;
             document.getElementById("otp").innerHTML = result1;
-        }else
-        if (selected1 == "usd1" && selected2 == "vn2") {
-            result2 = result * 23000000;
+        }else if (value1 == "usd1" && value2 == "vn2") {
+            let result2 = inputValue * 23000;
             document.getElementById("otp").innerHTML = result2;
         }
-
-
-
-        /*document.getElementById("money").value = result;*/
     }
-
 </script>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được.</title>
+</head>
+<body>
+<h3>Tính hoa hồng nhận được</h3>
+<table>
+    <tr>
+        <td>
+            Nhập doanh số bán hàng của bạn:
+            <input id="price">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button name="btn" onclick="clickBtn()">Kiểm tra</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span id="outPut"></span>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    /*Từ 0-280 triệu đồng: Mức hoa hồng nhận được là 0% (Nhân viên đảm bảo KPI để nhận lương cứng)
+    Từ 280 triệu – 500 triệu đồng: Mức hoa hồng: 15% doanh thu
+    Từ 500 triệu – 800 triệu đồng: Mức hoa hồng: 25% doanh thu*/
+    function clickBtn() {
+        let price = +document.getElementById("price").value;
+        if (price <= 280000) {
+            document.getElementById("outPut").innerHTML = "Mức hoa hồng nhận được là 0%";
+        } else if(price <= 500000) {
+            let rose = price * (15/100);
+            document.getElementById("outPut").innerHTML = "Mức hoa hồng của bạn là: " + rose;
+        } else if(price <= 800000) {
+            let rose1 = price * (25/100);
+            document.getElementById("outPut").innerHTML = "Mức hoa hồng của bạn là: " + rose1;
+        }
+    }
+</script>
+</html>

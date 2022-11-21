@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất trong 3 số </title>
+</head>
+<body>
+<h3>Tìm số lớn nhất trong 3 số a, b, c.</h3>
+<table>
+    <tr>
+        <td>
+            Nhập a:
+            <input id="a">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nhập b:
+            <input id="b">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nhập c:
+            <input id="c">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button name="btn" onclick="clickBtn()">Kiểm tra</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span id="outPut"></span>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    function clickBtn() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        if (a == b && b == c) {
+            document.getElementById("outPut").innerHTML = "a, b, c bằng nhau";
+        } else if (a > b && a > c) {
+            document.getElementById("outPut").innerHTML = "a là số lớn nhất";
+        } else if (b > a && b > c) {
+            document.getElementById("outPut").innerHTML = "b là số lớn nhất";
+        } else {
+            document.getElementById("outPut").innerHTML = "c là số lớn nhất";
+        }
+    }
+</script>
+</html>

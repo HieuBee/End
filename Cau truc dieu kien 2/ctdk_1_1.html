@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra chia hết</title>
+</head>
+<body>
+<h3>Kiểm tra a có chia hết b hay không.</h3>
+<table>
+  <tr>
+    <td>
+      Nhập a:
+      <input id="a">
+    </td>
+  </tr>
+  <tr>
+    <td>
+       Nhập b:
+      <input id="b">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button name="btn" onclick="clickBtn()">Kiểm tra</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span id="outPut"></span>
+    </td>
+  </tr>
+</table>
+</body>
+<script>
+  function clickBtn() {
+    let a = +document.getElementById("a").value;
+    let b = +document.getElementById("b").value;
+    if (a % b === 0) {
+      document.getElementById("outPut").innerHTML = "a chia hết cho b";
+    } else {
+      document.getElementById("outPut").innerHTML = "a không chia hết cho b";
+    }
+  }
+</script>
+</html>

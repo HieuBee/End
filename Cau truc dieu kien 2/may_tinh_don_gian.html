@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<table style="border: 1px solid black; border-radius: 5px">
+  <tr>
+    <th colspan="4" style="height: 30px; width: 200px">
+      <!--<div class="output" style="width: 200px; height: 20px; border: 1px solid black">
+        <span id="outPut"></span>
+      </div>-->
+      <!--<input style="height: 25px; width: 200px; text-align: right" type="text" id="outPut">-->
+      <span id="outPut"></span>
+    </th>
+  </tr>
+  <tr>
+    <th> <button style="width: 30px; height: 30px" value="1" id="1">1</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="2" id="2">2</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="3" id="3">3</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="+" id="cong">+</button> </th>
+  </tr>
+  <tr>
+    <th> <button style="width: 30px; height: 30px" value="4" id="4">4</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="5" id="5">5</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="6" id="6">6</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="-" id="tru">-</button> </th>
+  </tr>
+  <tr>
+    <th> <button style="width: 30px; height: 30px" value="7" id="7">7</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="8" id="8">8</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="9" id="9">9</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="x" id="nhan">x</button> </th>
+  </tr>
+  <tr>
+    <th> <button style="width: 30px; height: 30px" value="C" id="C">C</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="0" id="0">0</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="=" onclick="tinhtoan()">=</button> </th>
+    <th> <button style="width: 30px; height: 30px" value="/" id="chia">/</button> </th>
+  </tr>
+</table>
+</body>
+<script>
+  function so(){
+    let so = document.getElementById("a").value;
+    document.getElementById("outPut").innerHTML = so;
+  }
+</script>
+</html>

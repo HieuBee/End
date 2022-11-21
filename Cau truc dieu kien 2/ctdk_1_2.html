@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Kiểm tra học sinh đủ tuổi vào lớp 10 hay không.</h3>
+<table>
+    <tr>
+        <td>
+            Nhập tuổi:
+            <input id="age">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button name="btn" onclick="clickBtn()">Kiểm tra</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span id="outPut"></span>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    function clickBtn() {
+        let age = +document.getElementById("age").value;
+        if (age >= 15) {
+            document.getElementById("outPut").innerHTML = "Học sinh đã đủ tuổi để vào lớp 10";
+        } else {
+            document.getElementById("outPut").innerHTML = "Học sinh chưa đủ tuổi để vào lớp 10";
+        }
+    }
+</script>
+</html>

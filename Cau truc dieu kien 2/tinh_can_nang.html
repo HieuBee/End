@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số khối cân nặng</title>
+</head>
+<body>
+<h2>Chỉ số khối cân nặng của bạn: </h2>
+<table>
+    <tr>
+        <td>
+            <input type="number" name="height" id="yourHeight"> (m)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" name="weight" id="yourWeight"> (kg)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" name="btn" onclick="inp()"> Click </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span id="outPut"></span>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    function inp() {
+        let yH = +document.getElementById("yourHeight").value;
+        let yW = +document.getElementById("yourWeight").value;
+        let bmi = yW / (yH * yH);
+        if (bmi < 18) {
+            document.getElementById("outPut").innerHTML = bmi + ": Underweight";
+        } else if (bmi < 25.0) {
+            document.getElementById("outPut").innerHTML = bmi + ": Normal";
+        }else if (bmi < 30.0) {
+            document.getElementById("outPut").innerHTML = bmi + ": Overwieght";
+        } else {
+            document.getElementById("outPut").innerHTML = bmi + ": Obese";
+        }
+    }
+</script>
+</html>
