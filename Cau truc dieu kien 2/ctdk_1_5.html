@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+
+</body>
+<script>
+    let diemBKT = +prompt("Nhập điểm bài kiểm tra: ");
+    let diemGK = +prompt("Nhập điểm kiểm tra giữa kì: ");
+    let diemCK = +prompt("Nhập điểm kiểm tra cuối kì: ");
+    let hocLuc = (diemBKT + diemGK*2 + diemCK*3)/5;
+    if (hocLuc <= 10) {
+        alert("Bạn được xếp loại giỏi. Điểm của bạn là: " + hocLuc);
+    } else if (hocLuc < 8) {
+        alert("Bạn được xếp loại khá. Điểm của bạn là: " + hocLuc);
+    } else if (hocLuc <= 6.5) {
+        alert("Bạn được xếp loại trung bình. Điểm của bạn là: " + hocLuc);
+    } else  if (hocLuc < 5) {
+        alert("Bạn được xếp loại yếu. Điểm của bạn là: " + hocLuc);
+    } else {
+        alert("Bạn được xếp loại kém và rất tiếc bạn phải thi lại. Điểm của bạn là: " + hocLuc);
+    }
+</script>
+</html>
