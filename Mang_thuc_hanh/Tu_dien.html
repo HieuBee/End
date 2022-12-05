@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="inputSearch">
+<input onclick="searchLg()" type="button" value="Search">
+<p id="outPutS"></p>
+</body>
+<script>
+  function searchLg() {
+      let inputSearch = document.getElementById("inputSearch").value;
+      let arrEnglish = ["Apple", "Mango", "Banana"];
+      let arrVietNam = ["Quả táo", "Xoài", "Chuối"];
+      let index = arrEnglish.indexOf(inputSearch);
+      if (index < 0) {
+          document.getElementById('outPutS').innerText = 'ko tim thay';
+      } else {
+          document.getElementById('outPutS').innerText = arrVietNam[index];
+      }
+  }
+</script>
+</html>

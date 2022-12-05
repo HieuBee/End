@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci.</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    * a + b = c
+    *     b + c = d*/
+    let n = 18;
+    let f0 = 0, f1 = 1, fn = 1;
+    document.write(f0 + "<br>" + f1 + "<br>");
+    for (let i = 0 ; i <= n; i++){
+        if (i > 0) {
+            fn = f0 + f1;
+            f0 = f1;
+            f1 = fn;
+            document.write(fn + "<br>");
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So nguyên tố</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers = +prompt("Nhập số lượng số nguyên tố cần in ra: ");
+    let N = 2;
+    let count = 0;
+    while (count < numbers){
+        let isPrime = true;
+        for (i = 2 ; i < N ; i++){
+            if (N % i === 0){
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime){
+            count++;
+            document.write(N + "<br>");
+        }
+        N++;
+    }
+
+</script>
+</html>

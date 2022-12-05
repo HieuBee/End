@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng các hàm có sẵn của mãng.</title>
+</head>
+<body>
+</body>
+<script>
+    // Bài 1: Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau
+    // let myColor = ["Red", "Green", "White", "Black"];
+    //document.write(myColor.toString());
+
+    /*let myColor = "86986876";
+    for (let i = 0; i < myColor.length; i++) {
+        document.write(myColor[i] + "<br>");
+    }*/
+    // document.write(myColor.toString());
+
+    //-------------------------------------------------------------
+
+    // Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn
+    /*const number = window.prompt();
+    const str = number.toString();
+    const arr = [str[0]];
+    for (let i = 1; i < str.length; i++) {
+        if ( (str[i - 1] % 2 === 0) && (str[i] % 2 === 0)){
+            arr.push("-", str[i]);
+        } else {
+            arr.push(str[i]);
+        }
+    }
+    document.write(arr.join(""));*/
+
+    //-------------------------------------------------------------
+
+    // Bài 3: Viết một chương trình nhập vào một chuỗi và chuyển các ký
+    // tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa
+    let strings = window.prompt("Nhập chuỗi bạn cần chuyển đổi: ");
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    var arr = []
+    for (let i = 0; i < strings.length ; i++) {
+        if (UPPER.includes(strings[i])){
+            arr.push(strings[i].toLowerCase());
+        } else if (LOWER.includes(strings[i])){
+            arr.push(strings[i].toUpperCase());
+        }
+    }
+    document.write(arr.join(""));
+
+</script>
+</html>
