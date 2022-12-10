@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
+      Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.</title>
+</head>
+<body>
+<input type="text" id="inPutFt">
+<input type="button" onclick="test()" value="Click">
+<span id="outPutFt"></span>
+</body>
+<script>
+
+  function intFunction(number) {
+    number += 1;
+    return number;
+  }
+  function test(){
+    let inPutFt = +document.getElementById("inPutFt").value;
+    let result = intFunction(inPutFt);
+    document.getElementById("outPutFt").innerHTML = result;
+  }
+
+
+  /*function intFunction() {
+    let inPutFt = +document.getElementById("inPutFt").value;
+    inPutFt += 1;
+    document.getElementById("outPutFt").innerHTML = inPutFt;
+  }*/
+</script>
+</html>

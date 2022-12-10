@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+      Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.</title>
+</head>
+<body>
+</body>
+<script>
+  function getInt(number1, number2) {
+    let sum = 0;
+    if (number1 > number2) {
+      document.write(number1 + " lớn hơn " + number2);
+    } else {
+      sum = number1 + number2;
+      document.write("Tổng của 2 số vừa nhập là: " + sum);
+    }
+  }
+  let a = +prompt("Nhập vào số a: ");
+  let b = +prompt("Nhập vào số b: ");
+  getInt(a, b);
+
+</script>
+</html>
