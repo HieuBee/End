@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build class caption rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="200"></canvas>
+</body>
+<script>
+  let setWeight = +prompt("Input weight: ");
+  let setHeight = +prompt("Input height: ");
+  // Canvas
+  let canvasWeight = setWeight * 50;
+  let canvasHeight = setHeight * 50;
+  let c = document.getElementById("myCanvas");
+  let ctx = c.getContext("2d");
+  ctx.fillRect(10, 10, canvasHeight, canvasWeight);
+  document.write("<br>");
+
+  //Calculate: tính toán
+  let rectangle = {
+    weight : setWeight,
+    setWeight : setHeight,
+    S : function () {
+      document.write("S = " + (setWeight * setHeight) + "<br>");
+    },
+    C : function () {
+      document.write("C = " + ((setHeight + setWeight) * 2));
+    }
+  }
+  rectangle.S();
+  rectangle.C();
+</script>
+</html>
