@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2 - Exercise 2</title>
+</head>
+<body>
+</body>
+<script>
+  let h = +prompt("Enter the height of isosceles triangle: ");
+  let m = h;
+  let n = h;
+  for (let i = 1; i <= h; i++) {
+    for (let j = 1; j <= 2 * h - 1; j++) {
+      if (j >= m && j <= n){
+        document.write("*");
+      } else {
+        document.write("&ensp;");
+      }
+    }
+    m--;
+    n++;
+    document.write("<br>");
+  }
+</script>
+</html>
