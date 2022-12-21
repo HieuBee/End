@@ -11,10 +11,12 @@
     constructor(weight) {
       this.weight = weight;
     }
-    decrease(){
-      // if (this.weight > 0){
-        this.weight--;
-      // }
+    decrease(number){
+      if (number <= 10){
+        this.weight -= number;
+      } else {
+        this.weight = 0;
+      }
     }
     isEmpty(){
       if (this.weight){
@@ -42,8 +44,12 @@
     checkApple(){
       Apple.hasOwnProperty('weight');
     }
-    eat(){
-      this.weighth++;
+    eat(number){
+      if (number <= 10){
+        this.weighth += number;
+      } else {
+        this.weighth -= 10;
+      }
     }
     say(){
       console.log("");
@@ -67,10 +73,12 @@
 
   if (apple.hasOwnProperty('weight')) {
     let choose = +prompt("Enter 1 to eat ");
-    if (choose === 1) {
+    /*if (choose === 1) {
       human.eat();
       apple.decrease();
-    }
+    }*/
+    human.eat(choose);
+    apple.decrease(choose);
 
     document.write("Weight of " + human.name + ": " + human.weighth + "<br>");
     document.write("Weight of apple: " + apple.weight + "<br>");
